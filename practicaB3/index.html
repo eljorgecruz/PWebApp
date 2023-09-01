@@ -13,10 +13,10 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-          Bootstrap
-        </a>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
@@ -26,10 +26,10 @@
               <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -37,7 +37,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active">+555 555 5555</a>
@@ -46,6 +46,7 @@
         </div>
       </div>
     </nav>
+    
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -93,11 +94,9 @@
           <p class="text-primary text-center py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi necessitatibus molestias libero tempore assumenda quidem molestiae, veniam dicta? Officiis, nesciunt.</p>
         </div>
       </div>
-    </div>
-
-    <div class="container">
+    
       <div class="row">
-        <div class="col-12 col-md-4 col-sm-6">
+        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center flex-wrap">
           <div class="card" style="width: 18rem;">
             <img src="images/img6.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -107,7 +106,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-sm-6">
+        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center flex-wrap">
           <div class="card" style="width: 18rem;">
             <img src="images/img7.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -117,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-sm-6">
+        <div class="col-12 col-md-4 col-sm-6 d-flex justify-content-center flex-wrap">
           <div class="card" style="width: 18rem;">
             <img src="images/img6.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -128,15 +127,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <p style="color:white;">Esto es un espacio</p>
-      </div>
-    </div>
-
-    <div class="container">
+    
       <div class="jumbotron">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -144,15 +135,15 @@
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </div>
-    </div>
+    
 
-    <div class="container">
+    
       <div class="row">
         <p style="color:white;">Esto es un espacio</p>
       </div>
-    </div>
+    
 
-    <div class="container">
+
       <div class="row">
         <!-- acordeon -->
       <div class="accordion col-12 col-md-6 col-sm-6" id="accordionPanelsStayOpenExample">
@@ -207,14 +198,13 @@
         </ul>
       </div>
       
-    </div>
-
-    <div class="container">
+    
       <div class="row">
         <p style="color:white;">Esto es un espacio</p>
       </div>
-    </div>
 
+     </div>
+    </div>
     <footer class="bg-dark text-white">
       <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia accusantium temporibus error ipsa doloribus excepturi iure culpa quas rerum rem laboriosam harum nam, repellendus quia ab aspernatur vero aliquid laudantium</p>
     </footer>
